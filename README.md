@@ -116,7 +116,7 @@ Header						|&nbsp;		|R			|请求报文头
 &emsp;Token					|string		|R			|用户登录后token，没有登录则为空字符串
 &emsp;lang					|string		|R			|对应语言
 body						|&nbsp;		|R			|&nbsp;
-&emsp;page					|boolean	|R			|对应页码
+&emsp;page					|int	|R			|对应页码
 
 
 请求示例：
