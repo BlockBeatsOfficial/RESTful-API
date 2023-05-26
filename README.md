@@ -1,5 +1,5 @@
 
-# Blockbeats Company PC Platform API Documentation v1.0.0
+# Blockbeats RESTful-API
 
 ## 1 Specifications
 
@@ -69,7 +69,6 @@ https://api.theblockbeats.info/v4/
 Parameter Name						|Type		|Requirement	|Description  
 :----						|:---		|:------	|:---	
 Header						|&nbsp;		|R			|请求报文头
-&emsp;Token					|string		|R			|用户登录后token，没有登录则为空字符串
 &emsp;lang					|string		|R			|对应语言
 body						|&nbsp;		|R			|&nbsp;
 &emsp;page					|boolean	|R			|对应页码
