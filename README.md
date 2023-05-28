@@ -11,7 +11,7 @@ https://api.theblockbeats.news/v1/
 HTTPS protocol
 
 ### 1.2 Request Method
-All endpoints only support POST requests.
+All endpoints only support GET requests.
 
 ### 1.3 Character Encoding
 UTF-8 character encoding is used for both HTTPS communication 
