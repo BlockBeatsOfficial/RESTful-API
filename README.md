@@ -3,7 +3,7 @@
 
  Domain
 ```
-[https://api.theblockbeats.news/v1/](https://api.theblockbeats.news/v1/)
+https://api.theblockbeats.news/v1/
 ```
 ## 1 Specifications
 
