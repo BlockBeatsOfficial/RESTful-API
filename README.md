@@ -78,36 +78,38 @@ create_time					        |create time
 "size":10
 ```
 
+All endpoint responses are in JSON format. Unless specified otherwise, each response contains the following fields:
 
-#### 2.1.2 Response Results
-
-Parameter Name							|Type		|Requirement	|Description  
-:----						|:---		|:------	|:---	
-code						|int		|R			|响应码，代码定义请见“附录A 响应吗说明”
-msg							|string		|R			|&nbsp;
-bannerList					|object		|R			|轮播图
-libraryList					|object		|R			|文库列表
-newsList					|object		|R			|文章快讯列表
-&emsp;id					|object		|R			|文章/快讯的id
-&emsp;title					|object		|R			|文章/快讯标题
-&emsp;im_abstract			|object		|R			|文章简介
-&emsp;content				|object		|R			|快讯时的内容
-&emsp;type					|object		|R			|文章为1/快讯为2
+Parameter Name						|Description  
+:----							|:---	
+title							|Article title
+description 						|Article description
+content							|Article content
+link							|BlockBeats link
+url							|url
+create_time					        |create time
 
 示例：
 
 ```
 {
-    "code":200,
-    "message":"success",
-    "newsList":[
-		{
-			"id": 0,
-			"title": "BlockBeats",
-			"im_abstract": "abstract",
-			"type": 1
-		}
-	]
+	"status": 0,
+	"message": "获取成功",
+	"data": {
+		"page": "2",
+		"data": [
+			{
+				"title": "原生资产VS桥接资产：加密货币的安全之路",
+				"description": "了解和区分加密货币的原生资产与跨链桥资产的重要性。",
+				"content": "",
+				"link": "https://m.theblockbeats.info/news/37335",
+				"pic": "https://image.theblockbeats.info/headimage/2023-05-25/3f95f1423597e21500ee86c40a453e7f01676a6e.png?x-oss-process=image/quality,q_50/format,webp",
+				"column ": "DeFi",
+				"create_time": "1684998869",
+				"is_original": true
+			}
+		]
+	}
 }
 ```
 
@@ -115,13 +117,7 @@ newsList					|object		|R			|文章快讯列表
 
 Response Code	|Description  
 :----	|:---
-200		|Processed successfully
-205		|Not logged in
-201		|Incorrect parameters
-401		|Unknown error
-
-
-
+0		|Processed successfully
 ## Authors
 
 - [@BlockBeats](https://theblockbeats.info)
