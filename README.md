@@ -1,6 +1,10 @@
 
 # Blockbeats RESTful-API
 
+ Domain
+```
+[https://api.theblockbeats.news/v1/](https://api.theblockbeats.news/v1/)
+```
 ## 1 Specifications
 
 ### 1.1 Communication Protocol
@@ -62,13 +66,6 @@ create_time					        |create time
 		]
 	}
 }
-```
-
-
-## 2.  Endpoint Definitions
-Endpoint Domain
-```
-https://api.theblockbeats.info/v4/
 ```
 
 
