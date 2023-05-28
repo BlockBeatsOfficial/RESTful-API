@@ -38,7 +38,7 @@ Parameter Name						|Description
 title							|flash title
 content 						|flash content
 pic							|flash image
-link							|Original link
+link							|BlockBeats link
 url							|url
 create_time					        |create time
 
