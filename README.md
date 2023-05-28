@@ -16,19 +16,17 @@ All endpoints only support POST requests.
 ### 1.3 Character Encoding
 UTF-8 character encoding is used for both HTTPS communication 
 
-### 1.6 Request Message Structure
+### 1.4 Request Message Structure
 
-#### 1.6.3 Request Message Example
-Quest
+### 1.4.1 Flash Details
+- ** article ** 
+- **Endpoint：** open-api/open-flash?size={size}&page={page}
+
+#### 1.4.2 Quest
 
 ```
-
-"request":{
-    "page":1,
-    "size":10
-}
-
-
+"page":1,
+"size":10
 ```
 
 ### 1.7 Response Message Structure
@@ -70,32 +68,14 @@ create_time					        |create time
 
 
 ### 2.1 Article Details
-- **Endpoint Description：** 首页列表数据
-- **Endpoint：** /home/select
+- ** article ** 
+- **Endpoint：** open-api/open-information?size={size}&page={page}
 
-#### 2.1.1 请求参数
-  
-Parameter Name						|Type		|Requirement	|Description  
-:----						|:---		|:------	|:---	
-Header						|&nbsp;		|R			|请求报文头
-&emsp;lang					|string		|R			|对应语言
-body						|&nbsp;		|R			|&nbsp;
-&emsp;page					|boolean	|R			|对应页码
-
-
-Request Example:
+#### 2.1.1 Quest
 
 ```
-{
-    "Header":{
-        "token":"",
-        "lang":"zh"
-    },
-    "body":{
-        "page":"1"
-    }
-}
-
+"page":1,
+"size":10
 ```
 
 
