@@ -10,21 +10,20 @@ HTTPS protocol
 All endpoints only support POST requests.
 
 ### 1.3 Character Encoding
-UTF-8 character encoding is used for both HTTP communication and BASE64 encoding of messages.
+UTF-8 character encoding is used for both HTTPS communication 
 
 ### 1.6 Request Message Structure
-The endpoints accept only two parameters: RequestData and SignData. The value of RequestData represents the request content, while the value of SignData represents the signature content.
 
 #### 1.6.3 Request Message Example
-Plain text request content:
+Quest
 
 ```
-{
-    "request":{
-        "email":"example@*.com",
-        "password":"******"
-    }
+
+"request":{
+    "page":1,
+    "size":10
 }
+
 
 ```
 
@@ -32,23 +31,36 @@ Plain text request content:
 #### 1.7.1 Structure Description
 All endpoint responses are in JSON format. Unless specified otherwise, each response contains the following fields:
 
-Parameter Name						|Type		|Requirement	|Description  
-:----						|:---		|:------	|:---	
-code						|int		|R			|Response code. Refer to "Appendix - Response Code Description" for the code definitions.
-message						|string		|R			|Response description
-data						|object		|R			|Parameters specific to each endpoint, see each endpoint definition for details
-
+Parameter Name						|Description  
+:----							|:---	
+title							|flash title
+content 						|flash content
+pic							|flash image
+link							|Original link
+url							|url
+create_time					        |create time
 
 #### 1.7.2 Response Message Example
 
 ```
 {
-    "code":200,
-    "mssage":"success",
-    "data":{
-        "name":"example",
-        "sex":1
-    }
+	"status": 0,
+	"message": "获取成功",
+	"data": {
+		"page": 1,
+		"data": [
+			{
+				"id": 147280,
+				"title": "MULTI短时上涨逼近5美元，24小时涨幅超40%",
+				"content": "BlockBeats 消息，5 月 28 日，行情数据显示，MULTI（Multichain）短时上涨逼近 5 美元，现报价 4.73 美元，24 小时涨幅 41.62%。",
+				"pic": "",
+				"link": "https://m.theblockbeats.info/flash/147280",
+				"url": "",
+				"create_time": "1685275243"
+			}
+			
+		]
+	}
 }
 ```
 
