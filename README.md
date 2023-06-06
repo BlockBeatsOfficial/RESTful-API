@@ -20,13 +20,14 @@ UTF-8 character encoding is used for both HTTPS communication
 
 ### 1.4.1 Flash Details
 - ** article ** 
-- **Endpoint：** open-api/open-flash?size={size}&page={page}
+- **Endpoint：** open-api/open-flash?size={size}&page={page}&type={type}
 
 #### 1.4.2 Quest
 
 ```
-"page":1,
-"size":10
+"page":1,  //page
+"size":10, //size
+"type":push //important news
 ```
 
 ### 1.7 Response Message Structure
@@ -69,13 +70,14 @@ create_time					        |create time
 
 ### 2.1 Article Details
 - ** article ** 
-- **Endpoint：** open-api/open-information?size={size}&page={page}
+- **Endpoint：** open-api/open-information?size={size}&page={page}&type={type}
 
 #### 2.1.1 Quest
 
 ```
-"page":1,
-"size":10
+"page":1,  //page
+"size":10, //size
+"type":push //important news
 ```
 
 All endpoint responses are in JSON format. Unless specified otherwise, each response contains the following fields:
