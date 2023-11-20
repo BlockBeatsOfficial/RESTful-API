@@ -28,6 +28,7 @@ UTF-8 character encoding is used for both HTTPS communication
 "page":1,  //page
 "size":10, //size
 "type":push //important news
+"lang":cn //language cn,en,cht
 ```
 
 ### 1.7 Response Message Structure
@@ -78,6 +79,7 @@ create_time					        |create time
 "page":1,  //page
 "size":10, //size
 "type":push //important news
+"lang":cn //language cn,en,cht
 ```
 
 All endpoint responses are in JSON format. Unless specified otherwise, each response contains the following fields:
