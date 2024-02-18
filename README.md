@@ -22,7 +22,7 @@ UTF-8 character encoding is used for both HTTPS communication
 - ** article ** 
 - **Endpoint：** open-api/open-flash?size={size}&page={page}&type={type}
 
-#### 1.4.2 Quest
+#### 1.4.2 Query
 
 ```
 "page":1,  //page
